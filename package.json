@@ -1,0 +1,10 @@
+{
+  "name":"mail",
+  "version":"1.0.0",
+  "description": "nodejs发送邮件",
+  "keywords": ["email"],
+  "author":"kevin",
+  "dependencies": {
+    "nodemailer":"^1.2.1"
+  }
+}
