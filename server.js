@@ -8,19 +8,19 @@ var transporter = nodemailer.createTransport({
     port: 465, // SMTP 端口
     secureConnection: true, // 使用 SSL
     auth: {
-        user: 'jmm4570@163.com',
+        user: 'XXXXX@163.com',//你的邮箱
         //这里密码不是qq密码，是你设置的smtp密码
-        pass: 'yuan4570'
+        pass: 'xxxxxx'
     }
 });
 
 
 var mailOptions = {
-    from: '我<jmm4570@163.com>', // sender address
-    to: '876730203@qq.com ', // list of receivers
-    subject: '标题你好1', // Subject line
-    text: '我是内容', // plaintext body
-    html: '<b>我是什么额</b>' // html body
+    from: '发件人<xxxxx@163.com>', // sender address
+    to: 'xxxx3@qq.com ', // list of receivers
+    subject: '标题你好', // Subject line
+    text: '我是内容', // plaintext body 邮件不支持html代码时所显示的文本
+    html: '<b>我是html文本</b>' // html body
 };
 
 transporter.sendMail(mailOptions, function(error, info){
